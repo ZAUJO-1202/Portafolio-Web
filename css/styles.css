@@ -100,6 +100,14 @@ img {
     50% { opacity: 0.6; } 
 }
 
+@keyframes reveal-cta {
+    0% { opacity: 0; }   /* 2s totalmente transparente */
+    25% { opacity: 1; }       /* 2s haciendo el fade-in */
+    50% { opacity: 1; }         /* 2s manteniéndose al 100% */
+    75% { opacity: 1; }       /* 2s haciendo el fade-out */
+    100% { opacity: 0; }   /* 2s totalmente transparente */
+}
+
 /* Animación de flujo constante (Densidad y Continuidad) */
 .s1 { left: 2%; animation-duration: 7s; animation-delay: -1s; }
 .s2 { left: 8%; animation-duration: 10s; animation-delay: -5s; }
@@ -241,6 +249,53 @@ img {
     height: auto;
     border: none;
     display: block;
+}
+
+/* Styles for the clickable image with overlay text */
+.visual-box-link {
+    display: block; /* Make the anchor tag a block element */
+    position: relative; /* For positioning the overlay text */
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Remove underline from link */
+    color: var(--specular-white); /* Ensure text color is visible */
+    display: flex; /* Use flex to center content if needed, though img will fill */
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-box-link img {
+    display: block; /* Remove extra space below image */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+.visual-box-call-to-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--deep-purple);
+    padding: 5%;
+    height: 101%;
+    width: 101%;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: reveal-cta 6s infinite;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2; /* Ensure it's above the image */
+}
+
+.visual-box-link:hover .visual-box-call-to-action {
+    background-color: var(--deep-purple); /* Solid color on hover */
+    transform: translate(-50%, -50%) scale(1.05); /* Slight scale effect */
 }
 
 .tag {
