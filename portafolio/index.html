@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Mauro Rios</title>
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Portafolio" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Syne:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+
+    <!-- Capa de fondo con elementos masivos, continuos y esferas -->
+    <div class="ambient-bg">
+        <!-- Esferas -->
+        <div class="floating-shape sphere s1"></div>
+        <div class="floating-shape sphere s5"></div>
+        <div class="floating-shape sphere s9"></div>
+        <div class="floating-shape sphere r2"></div>
+        <div class="floating-shape sphere r5"></div>
+        
+        <!-- Cubos -->
+        <div class="floating-shape cube s2"></div>
+        <div class="floating-shape cube s6"></div>
+        <div class="floating-shape cube s10"></div>
+        <div class="floating-shape cube s14"></div>
+        <div class="floating-shape cube r1"></div>
+        <div class="floating-shape cube r4"></div>
+
+        <!-- Pirámides -->
+        <div class="floating-shape pyramid s3"></div>
+        <div class="floating-shape pyramid s7"></div>
+        <div class="floating-shape pyramid s11"></div>
+        <div class="floating-shape pyramid r3"></div>
+        <div class="floating-shape pyramid r6"></div>
+
+        <!-- Extra Batch para saturación máxima -->
+        <div class="floating-shape sphere s4" style="width: 100px; height: 100px; opacity: 0.4;"></div>
+        <div class="floating-shape cube s8" style="width: 100px; height: 100px; opacity: 0.4;"></div>
+        <div class="floating-shape pyramid s12" style="scale: 2; opacity: 0.4;"></div>
+        <div class="floating-shape cube s13"></div>
+    </div>
+
+    <div class="nav-hint">SCROLL PARA EXPLORAR EL PORTAFOLIO</div>
+
+    <!-- PORTADA -->
+    <section class="slide">
+        <div class="top-left">Actualizado_09/04/2026</div>
+        <div class="title-wrap">
+            <div class="tag">ARTISTA 3D | DISEÑADOR GRÁFICO | PROGRAMADOR FRONT END</div>
+            <h1 class="main-title">PORTAFOLIO MULTIMEDIA</h1>
+            <h2 class="main-subtitle">Mauro Leandro Rios Churta</h2>
+        </div>
+    </section>
+
+    <!-- NDS -->
+    <section class="slide">
+        <h2 class="slide-title">Presentación NDS</h2>
+        <div class="content-grid">
+            <div>
+                <h3 class="slide-type">Trabajo de Aula</h3>
+                <p>Animación de presentación de producto, fue un ejercicio propuesto para poner en práctica las habilidades en el modelado y animación 3D usando el software Blender.</p>
+            </div>
+            <div class="visual-box">
+                <iframe
+                width="485"
+                height="862"
+                src="https://www.youtube.com/embed/WQ1F3dO30Sc?enablejsapi=1"
+                title="Presentación NDS para trabajo de Aula"
+                frameborder="0"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+        <!-- PRIMERA ANIMACIÓN -->
+    <section class="slide">
+        <h2 class="slide-title">Animación básica de objetos</h2>
+        <div class="content-grid">
+            <div class="visual-box">
+                <iframe width="479" height="851" src="https://www.youtube.com/embed/StwYK6RK6JA"
+                title="Primera Animación en Blender"
+                frameborder="0"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            </div>
+            <div>
+                <h3 class="slide-type">Trabajo de Aula</h3>
+                <p>Animación básica de objetos, fue un ejercicio propuesto para apropiar conocimientos de animación 3D usando el software Blender.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LUCHADOR -->
+    <section class="slide">
+        <h2 class="slide-title">Modelado de un luchador</h2>
+        <div class="content-grid">
+            <div>
+                <h3 class="slide-type">Trabajo de Aula</h3>
+                <p>Animación de presentación de producto, fue un ejercicio propuesto para poner en práctica las habilidades en el modelado y animación 3D usando el software Blender.</p>
+            </div>
+            <div class="visual-box">
+                <model-viewer
+                src="assets/models/luchador.glb"
+                alt="Modelo 3D Luchador"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                shadow-intensity="10"
+                shadow-softness="50"
+                environment-image="neutral"
+                exposure="0.6"
+                autoplay
+                loading="lazy"
+                loop
+                style="width: 100%; height: 400px;"></model-viewer>
+            </div>
+        </div>
+    </section>
+
+    <!-- PALA -->
+    <section class="slide">
+        <h2 class="slide-title">Modelado, esculpido y texturizado de objetos</h2>
+        <div class="content-grid">
+            <div class="visual-box">
+                <a href="https://drive.google.com/file/d/1zMh4XzTgJ7wkFI9owA6sOJBeQ3oZY5LB/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/pala.png" alt="Modelado y texturizado de pala 3D" loading="lazy">
+                </a>
+            </div>
+            <div>
+                <h3 class="slide-type">Trabajo de Aula</h3>
+                <p>Desarrollo del texturizado de un objeto, en este caso el objeto seleccionado es una pala, el proceso comprende el modelado lowpoly de la pala, el esculpido de la misma y finalmente el baking de texturas para lograr un resultado realista.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROBOT -->
+    <section class="slide">
+        <h2 class="slide-title">Modelado de un robot</h2>
+        <div class="content-grid">
+            <div>
+                <h3 class="slide-type">Material de clase</h3>
+                <p>Ejercicio propuesto para el curso de "Modelado y Texturizado para recursos Digitales" el cual llevé a cabo en el FabLab UFPS, la propuesta del ejercicio consta de realizar el modelado de un robot desde una referencia frontal y lateral.</p>
+            </div>
+            <div class="visual-box">
+                <model-viewer
+                src="assets/models/robot.glb"
+                alt="Modelo 3D Robot"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                shadow-intensity="10"
+                shadow-softness="50"
+                environment-image="neutral"
+                exposure="0.6"
+                autoplay
+                loading="lazy"
+                loop
+                style="width: 100%; height: 400px;"></model-viewer>
+            </div>
+        </div>
+    </section>
+
+    <!-- PINGÜINO -->
+    <section class="slide">
+        <h2 class="slide-title">Modelado de un pingüino</h2>
+        <div class="content-grid">
+            <div class="visual-box">
+                <model-viewer
+                src="assets/models/pinguino.glb"
+                alt="Modelo 3D Pingüino"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                shadow-intensity="10"
+                shadow-softness="50"
+                environment-image="neutral"
+                exposure="0.6"
+                autoplay
+                loading="lazy"
+                loop
+                style="width: 100%; height: 400px;"></model-viewer>
+            </div>
+            <div>
+                <h3 class="slide-type">Material de clase</h3>
+                <p>Ejercicio propuesto para el curso de "Modelado y Texturizado para recursos Digitales" el cual llevé a cabo en el FabLab UFPS, la propuesta del ejercicio consta de realizar el modelado de un pingüino desde una referencia frontal y lateral.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GATO -->
+    <section class="slide">
+        <h2 class="slide-title">Modelado de un gato</h2>
+        <div class="content-grid">
+            <div>
+                <h3 class="slide-type">Material de clase</h3>
+                <p>Ejercicio propuesto para el curso de "Modelado y Texturizado para recursos Digitales" el cual llevé a cabo en el FabLab UFPS, la propuesta del ejercicio consta de realizar el modelado de un gato desde una referencia frontal y lateral.</p>
+            </div>
+            <div class="visual-box">
+                <model-viewer
+                src="assets/models/gato.glb"
+                alt="Modelo 3D Gato"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                shadow-intensity="10"
+                shadow-softness="50"
+                environment-image="neutral"
+                exposure="0.6"
+                autoplay
+                loading="lazy"
+                loop
+                style="width: 100%; height: 400px;"></model-viewer>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="slide">
+        <div class="title-wrap">
+            <h1 class="contact-title">Ponte en contacto</h1>
+            <h3 class="contact-subtitle">O mira mis redes sociales:</h3>
+            <div class="social-links">
+                <!--<a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <span class="social-icon icon-instagram"></span>
+                </a>
+                <a href="https://www.facebook.com/tu_usuario" target="_blank" rel="noopener noreferrer" title="Facebook">
+                    <span class="social-icon icon-facebook"></span>
+                </a>
+                <a href="https://www.pinterest.com/tu_usuario" target="_blank" rel="noopener noreferrer" title="Pinterest">
+                    <span class="social-icon icon-pinterest"></span>
+                </a>
+                <a href="https://www.youtube.com/tu_usuario" target="_blank" rel="noopener noreferrer" title="YouTube">
+                    <span class="social-icon icon-youtube"></span>
+                </a>-->
+                <a href="https://wa.me/3168666075" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                    <span class="social-icon icon-whatsapp"></span>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-right">Actualizado_09/04/2026</div>
+    </section>
+
+</body>
+</html>
